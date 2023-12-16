@@ -5,7 +5,7 @@
 
 container = document.querySelector("#currentDay");
 
-var currentHour = dayjs().format('h:mm');
+var currentHour = dayjs().hour();
 var today = dayjs();
 $('#currentDay').text(today);
 
@@ -35,23 +35,17 @@ $(document).ready(function () {
   // current hour in 24-hour time?
 
 
-   /* //dayjs().hour() // gets current hour
-  currentTime = dayjs().hour(12) 
-  console.log(currentTime);
-  //to format time to currentHour
-  currentHour = dayjs(currentTime).format();
-  console.log(currentHour);
-  //container.append(currentHour);*/
 
   
-/*
+
   //loops through time blocks
   $('.time-block').each(function () {
     var blockHour = parseInt($(this).attr('id').split('-')[1]);
+    console.log(currentHour);
     //compares to current hour
     if (blockHour < currentHour) {
       $(this).addClass('past');
-      console.log(blockHour)
+      //console.log(blockHour)
     } else if (blockHour === currentHour) {
       $(this).removeClass('past');
       $(this).addClass('present');
@@ -61,7 +55,7 @@ $(document).ready(function () {
       $(this).addClass('future');
     }
   });
-  */
+  
 
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
