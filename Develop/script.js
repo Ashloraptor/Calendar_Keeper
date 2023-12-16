@@ -5,8 +5,9 @@
 
 container = document.querySelector("#currentDay");
 
-var time = dayjs().format('h:mm');
-$('#currentDay').text(time);
+var currentHour = dayjs().format('h:mm');
+var today = dayjs();
+$('#currentDay').text(today);
 
 $(document).ready(function () {
   // TODO: Add a listener for click events on the save button. This code should
