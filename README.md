@@ -1,17 +1,6 @@
 # Calendar_Keeper
 An application to help users block time in a calendar.
+Single-day calendar includes hours 9AM-5PM for a typical workday. Each hour block is color-coded to reflect if time has passed prior to the current hour. The page itself refreshes every minute to ensure that the current hour is accurately reflected. User is able to input a task within each time block to keep track.
 
+<img width="1276" alt="screenshot" src="https://github.com/Ashloraptor/Calendar_Keeper/assets/148083732/cc1a12b5-3784-4e30-90ea-a3f85619632f">
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours of 9am to 5pm
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
